@@ -1,0 +1,193 @@
+:focus {
+    outline: none;
+}
+
+article {
+    color: #555555;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 24rem;
+}
+
+article h1 {
+    font-weight: 700;
+    font-size: 24rem;
+    line-height: 30rem;
+}
+
+article h2 {
+    font-weight: 700;
+    font-size: 14rem;
+    line-height: 24rem;
+    margin-top: 24rem;
+}
+
+article form {
+    width: 100%;
+    background: #FFFFFF;
+    border: #e5e5e5 1rem solid;
+    border-radius: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+article form:focus {
+    outline: #555555 solid 1px
+}
+
+article form input {
+    width: 100%;
+    height: 32rem;
+    padding: 4rem 16rem;
+    font-family: 'PT Sans', sans-serif;
+    font-style: italic;
+    background: none;
+    border: none;
+}
+
+article form input:focus {
+    outline: none
+}
+
+article form button {
+    width: 24rem;
+    height: 24rem;
+    cursor: pointer;
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16rem;
+    transition: 0.5s;
+    border-radius: 50%;
+}
+
+article form button:hover {
+    background: #F5F5F5;
+}
+
+section.characters {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+section.characters .types {
+    padding: 0 88rem;
+    margin-top: 32rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.characters .types h3 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 12rem;
+    color: #8E8E8E;
+    line-height: 16rem;
+    font-weight: 400;
+}
+
+section.characters p {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14rem;
+    color: #555555;
+    line-height: 22rem;
+    font-weight: 700;
+    margin-left: 24rem;
+}
+
+section.characters .cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+section.characters .card {
+    width: 100%;
+    height: 72rem;
+    background: #FFFFFF;
+    border-radius: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 8rem;
+    padding: 16rem;
+    box-shadow: 0 0 5rem 0 rgba(0, 0, 0, 0.2);
+}
+
+section.characters .card .chars {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+section.characters .card img {
+    width: 48rem;
+    height: 48rem;
+}
+
+@media only screen and (min-width:1023px) {
+    article {
+        align-items: flex-start;
+        padding: 24rem 112rem;
+    }
+    article h1 {
+        font-size: 32rem;
+        margin-top: 16rem;
+    }
+    article h2 {
+        font-size: 16rem;
+        margin-top: 16rem;
+    }
+    section.characters .types {
+        margin-top: 40rem;
+        justify-content: space-between;
+        padding: 0 254rem 0 24rem;
+    }
+    section.characters .chars {
+        min-width: 154rem;
+        max-width: 28%;
+    }
+    section.characters .types h3 {
+        margin: 0 -168rem 0 0;
+    }
+    section.characters .types h3+h3 {
+        margin: 0
+    }
+    section.characters .card {
+        height: 88rem;
+        padding: 0 172rem 0 24rem;
+        justify-content: space-between;
+    }
+    section.characters .card div+div p {
+        font-family: 'PT Sans';
+        line-height: 16rem;
+        font-size: 14rem;
+        color: #555555;
+        font-weight: 400;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (min-width:1023px) {
+    div.card {
+        justify-content: space-between;
+    }
+}
+
+/* Disable scenes and comics from list */
+
+@media only screen and (max-width:1023px) {
+    section.characters .types h3+h3 {
+        display: none;
+    }
+    .cards .card div+div {
+        display: none;
+    }
+}
