@@ -1,6 +1,15 @@
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import md5 from "md5";
+
+import api from "../services/api";
+import marvelApi from "../keys/marvelApi.json";
+
 import "../styles/pages.css";
 
 export function Pages() {
+  
+
   return (
     <>
       <nav className="pages">

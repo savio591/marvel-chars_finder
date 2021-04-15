@@ -1,7 +1,5 @@
 import { render } from "react-dom";
 
-import { Home } from "./pages/Home";
+import Routes from "./routes";
 
-render(<Home />, document.getElementById("app"));
-
-console.log("Funfando como o denis diz");
+render(<Routes />, document.getElementById("app"));
