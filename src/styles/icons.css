@@ -6,6 +6,16 @@
     content: url('../assets/chevron-right.svg');
 }
 
+.icon_chevrons-left {
+    content: url('../assets/chevrons-right.svg');
+    transform: rotate(180deg);
+}
+
+.icon_chevron-left {
+    content: url('../assets/chevron-right.svg');
+    transform: rotate(180deg);
+}
+
 .icon_search {
     content: url('../assets/search.svg');
 }
