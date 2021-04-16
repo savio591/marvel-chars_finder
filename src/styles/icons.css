@@ -1,0 +1,39 @@
+.icon_chevrons-right {
+    content: url('../assets/chevrons-right.svg');
+}
+
+.icon_chevrons-right:hover {
+    content: url('../assets/chevrons-right_hover.svg');
+}
+
+.icon_chevron-right {
+    content: url('../assets/chevron-right.svg');
+}
+
+.icon_chevron-right:hover {
+    content: url('../assets/chevron-right_hover.svg');
+}
+
+.icon_chevrons-left {
+    content: url('../assets/chevrons-right.svg');
+    transform: rotate(180deg);
+}
+
+.icon_chevrons-left:hover {
+    content: url('../assets/chevrons-right_hover.svg');
+    transform: rotate(180deg);
+}
+
+.icon_chevron-left {
+    content: url('../assets/chevron-right.svg');
+    transform: rotate(180deg);
+}
+
+.icon_chevron-left:hover {
+    content: url('../assets/chevron-right_hover.svg');
+    transform: rotate(180deg);
+}
+
+.icon_search {
+    content: url('../assets/search.svg');
+}
