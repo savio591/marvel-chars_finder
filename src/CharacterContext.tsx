@@ -32,8 +32,6 @@ export function CharacterProvider({ children }: ApiProviderProps) {
     });
   }, []);
 
-  console.log(context.character)
-
   return (
     <CharacterContext.Provider value={context}>
       {children}
