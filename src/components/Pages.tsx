@@ -10,38 +10,24 @@ export function Pages() {
 
   // Converts the total number of characters in pagination
   const pagination = parseInt((pages + 1 * 10) / 10 + 1);
-<<<<<<< HEAD
-
-=======
-  console.log({ pagination });
->>>>>>> de3910f57636677f03c0fb9cd9d491c9a30dd8fc
   // pagination mapping for the buttons
   const pagingMap = [];
   for (let i = 1; i < pagination; i++) {
     pagingMap.push(i);
   }
-<<<<<<< HEAD
 
   // Default pagination is 1 if don't have a page query.
   // When in the query isn't a page query, will return a NaN
   // instead a number, so the const page will parse this rule:
   const page = isNaN(pageQuery) ? 1 : pageQuery;
 
-=======
-  console.log({ pagingMap: pagingMap.length });
-
-  // Default pagination is 1 if don't have a page query.
-  // When in the query isn't a page query, will return a NaN
-  // instead a number, so the const page will parse this rule:
-  const page = isNaN(pageQuery) ? 1 : pageQuery;
-  console.log({ page });
->>>>>>> de3910f57636677f03c0fb9cd9d491c9a30dd8fc
   // Page offset
   let pagingOffset = 3;
   if (pageQuery > 3) {
     pagingOffset = pageQuery;
     console.log({ pagingOffset });
   }
+  
 
   /* Query generator */
   const query = (p: number) => {
@@ -91,14 +77,10 @@ export function Pages() {
               <i className="icon_chevron-right"></i>
             </button>
           </Link>
-<<<<<<< HEAD
           <Link
             to={query(pagination - 1)}
             hidden={arrowsRightClassOff(page + 1)}
           >
-=======
-          <Link to={query(pagination - 1)} hidden={arrowsRightClassOff(page + 1)}>
->>>>>>> de3910f57636677f03c0fb9cd9d491c9a30dd8fc
             <button>
               <i className="icon_chevrons-right"></i>
             </button>
