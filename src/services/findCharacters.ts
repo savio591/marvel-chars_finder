@@ -22,6 +22,7 @@ export default async function FindCharacters(
   let characters = [];
   let totalOfPages = 0;
 
+  const queryName = (name ==="" || null) ? null : name
   const queryPage = typeof page === typeof 0 ? page * 10 - 10 : null;
 
   const params = {
@@ -30,7 +31,7 @@ export default async function FindCharacters(
     hash: md5(Date.now() + marvelApi.private + marvelApi.public),
     limit: 10,
     offset: queryPage,
-    nameStartsWith: name,
+    nameStartsWith: queryName,
   };
 
   await api

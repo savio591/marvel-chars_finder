@@ -25,9 +25,7 @@ export function Pages() {
   let pagingOffset = 3;
   if (pageQuery > 3) {
     pagingOffset = pageQuery;
-    console.log({ pagingOffset });
   }
-  
 
   /* Query generator */
   const query = (p: number) => {

@@ -24,7 +24,6 @@ article h2 {
     margin-top: 24rem;
 }
 
-
 article form {
     width: 100%;
     background: #FFFFFF;
@@ -34,11 +33,16 @@ article form {
     align-items: center;
 }
 
+article form:active {
+    outline: #555555 solid 1px;
+}
+
 article form:focus {
-    outline: #555555 solid 1px
+    box-shadow: 0 0 5rem 0 rgb(0 0 0 / 20%);
 }
 
 article form input {
+    appearance: none;
     width: 100%;
     height: 32rem;
     padding: 4rem 16rem;
@@ -48,8 +52,11 @@ article form input {
     border: none;
 }
 
-article form input:focus {
-    outline: none
+
+article form input:-internal-autofill-selected {
+    appearance: none;
+    background: none !important;
+    color: -internal-light-dark(black, white) !important;
 }
 
 article form button {
@@ -62,12 +69,13 @@ article form button {
     align-items: center;
     justify-content: center;
     margin-right: 16rem;
-    transition: 0.5s;
+    transition: 0.2s;
     border-radius: 50%;
 }
 
 article form button:hover {
     background: #F5F5F5;
+    transform: scale(1.1);
 }
 
 section.characters {
@@ -122,6 +130,16 @@ section.characters .card {
     box-shadow: 0 0 5rem 0 rgba(0, 0, 0, 0.2);
 }
 
+section.characters .card:hover {
+    box-shadow: 0 0 5rem 0px rgb(0 0 0 / 60%);
+    cursor: pointer;
+}
+
+section.characters .card div img {
+    object-fit: fill;
+    border-radius: 4rem;
+}
+
 section.characters .card .chars {
     display: flex;
     flex-direction: row;
@@ -164,10 +182,6 @@ section.characters .card img {
     }
     section.characters .card div {
         width: 33.3%;
-    }
-    section.characters .card div img {
-        object-fit: fill;
-        border-radius: 4rem;
     }
     section.characters .card div+div p {
         font-family: 'PT Sans';

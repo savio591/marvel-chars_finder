@@ -37,10 +37,12 @@ header button {
 
 header button:hover {
     background-color: #555555;
+    cursor: pointer;
 }
 
 header button:hover p {
     color: #F5F5F5;
+
 }
 
 header h3, header h4 {

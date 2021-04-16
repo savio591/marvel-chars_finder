@@ -30,6 +30,13 @@ div.pages_n {
     flex-direction: row;
 }
 
+div.pages_n button:hover {
+    border: #167ABC solid 1rem;
+    background: #167ABC;
+    color: #FFFFFF;
+    filter: brightness(1.3);
+}
+
 div.pages_n button.btn_selected {
     border: #167ABC solid 1rem;
     background: #167ABC;
