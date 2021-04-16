@@ -5,19 +5,8 @@ import Cards from "./Cards";
 
 import "../../styles/article.css";
 
-// interface SearchQueries {
-//   findChar: string;
-// }
-
-// interface RequestParams {
-//   search: SearchQueries;
-// }
-
 export function Finder() {
-  const { search } = useLocation();
-
-  const findCharQuery = search.slice(10);
-
+  
   return (
     <>
       <article>
@@ -30,8 +19,7 @@ export function Finder() {
             <h3>Séries</h3>
             <h3>Eventos</h3>
           </div>
-
-          <Cards findChar={findCharQuery} />
+          <Cards />
         </section>
       </article>
     </>

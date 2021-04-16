@@ -145,25 +145,30 @@ section.characters .card img {
         font-size: 16rem;
         margin-top: 16rem;
     }
+
+    article form.search {
+        width: 295rem;
+    }
     section.characters .types {
         margin-top: 40rem;
-        justify-content: space-between;
-        padding: 0 254rem 0 24rem;
-    }
-    section.characters .chars {
-        min-width: 154rem;
-        max-width: 28%;
+        justify-content: flex-start;
+        padding: 0 24rem 0 24rem;
     }
     section.characters .types h3 {
-        margin: 0 -168rem 0 0;
-    }
-    section.characters .types h3+h3 {
-        margin: 0
+        width: 33.3%;
     }
     section.characters .card {
         height: 88rem;
-        padding: 0 172rem 0 24rem;
-        justify-content: space-between;
+        padding: 0 24rem 0 24rem;
+        justify-content: flex-start;
+    }
+    section.characters .card div {
+        width: 33.3%;
+    }
+
+    section.characters .card div img {
+        object-fit: fill;
+        border-radius: 4rem;
     }
     section.characters .card div+div p {
         font-family: 'PT Sans';

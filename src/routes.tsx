@@ -1,7 +1,6 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import { Home } from "./pages/Home";
-import { Finder} from "./components/Finder"
 
 const Routes = () => {
   return (

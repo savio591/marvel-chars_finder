@@ -4,7 +4,7 @@ export function Header() {
   return (
     <>
       <header>
-        <img src="assets/logo.svg" alt="Logo Objective" />
+        <img src="https://www.objective.com.br/wp-content/uploads/2020/11/logo.svg" alt="Logo Objective" />
         <div className="profile_header">
           <section>
             <h3>Savio Castelo</h3>

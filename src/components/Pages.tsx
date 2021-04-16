@@ -1,15 +1,19 @@
-import { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
 import md5 from "md5";
-
-import api from "../services/api";
-import marvelApi from "../keys/marvelApi.json";
+import { useState, useEffect, useContext } from "react";
+import { useLocation } from "react-router-dom";
+import { ApiContext } from "../ApiContext";
 
 import "../styles/pages.css";
 
 export function Pages() {
+  const { pages, queries } = useContext(ApiContext);
+
   
 
+  // Receber o total:
+  // Mapear o total em decimais 21 = 3
+  // Renderizar os números da paginação.
+  // Marcar a página selecionada como
   return (
     <>
       <nav className="pages">
