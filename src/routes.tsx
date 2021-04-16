@@ -4,7 +4,7 @@ import { Home } from "./pages/Home";
 
 const Routes = () => {
   return (
-      <BrowserRouter>
+      <BrowserRouter forceRefresh={true} >
         <Switch>
           <Route path="/" exact component={Home} />
         </Switch>
