@@ -5,7 +5,7 @@ export function Header() {
   return (
     <>
       <header>
-        <Link to="./">
+        <Link to="/">
           <img
             src="https://www.objective.com.br/wp-content/uploads/2020/11/logo.svg"
             alt="Logo Objective"
@@ -25,4 +25,3 @@ export function Header() {
     </>
   );
 }
-Header();

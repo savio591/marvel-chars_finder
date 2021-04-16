@@ -1,0 +1,99 @@
+.detailsContainer {
+    width: 100%;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 24rem;
+}
+
+.backButton {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.backButton button {
+    width: 112rem;
+    height: 72rem;
+    border-radius: 12rem;
+    display: flex;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    margin: 0 24rem;
+}
+
+.backButton button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5rem 0 rgba(0, 0, 0, 0.61);
+}
+
+.backButton button:before {
+    content: url(../assets/arrow-left.svg);
+    width: 24rem;
+    height: 24rem;
+    margin-right: 8rem;
+}
+
+.main {
+    color: #555555;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-shadow: 0 0 5rem 0 rgba(0, 0, 0, 0.2);
+    padding: 24rem;
+    border-radius: 24rem;
+}
+
+.main h1 {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 41px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+.main img {
+    width: 256px;
+    border-radius: 16px;
+    margin-top: 40rem;
+}
+
+.main h2 {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin-top: 40rem;
+}
+
+.main p {
+    font-family: PT Sans Caption;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin-top: 24rem;
+}
+
+div.nameImgDesc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main div+div div {
+    max-height: 512rem;
+    overflow: auto;
+}

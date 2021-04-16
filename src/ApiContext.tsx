@@ -32,7 +32,8 @@ export function ApiProvider({ children }: ApiProviderProps) {
       setChars(data.characters);
       setPages(data.totalOfPages);
     });
-  }, []);
+  }, [pageQuery]);
+
 
   return (
     <ApiContext.Provider

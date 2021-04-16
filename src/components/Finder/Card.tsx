@@ -1,3 +1,6 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
 import Character from "../../models/Character";
 
 interface Props {
@@ -8,7 +11,7 @@ export default function Card(props: Props) {
   const character = props.char;
 
   return (
-    <>
+    <Link to={"/character/"+character.id}>
       <div className="card">
         <div className="chars">
           <img
@@ -28,6 +31,6 @@ export default function Card(props: Props) {
           })}
         </div>
       </div>
-    </>
+    </Link>
   );
 }

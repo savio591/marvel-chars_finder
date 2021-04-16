@@ -7,6 +7,7 @@ import Card from "./Card";
 
 export default function Cards() {
   const { chars } = useContext(ApiContext);
+  
   return (
     <>
       <div className="cards">
